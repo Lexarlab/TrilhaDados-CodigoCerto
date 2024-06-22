@@ -2,7 +2,7 @@
 Este projeto tem como objetivo realizar uma análise básica de dados utilizando Python, explorando um conjunto de dados pré-definido para extrair insights simples através de estatísticas descritivas e visualizações gráficas.
 
 ## 💻 O Projeto
-O projeto foi desenvolvido no Jupyter Notebook, a partir das bibliotecas `Pandas` e `Matplotlib`, para análise e visualização dos dados com gráficos.
+O projeto foi desenvolvido no Jupyter Notebook, a partir das bibliotecas Python, `Pandas` e `Matplotlib`, para análise e visualização dos dados com gráficos.
 <br>
 Para o bom funcionamento do projeto em sua máquina é necessário que instale as bibliotecas mensionadas e às importe: 
 ```
