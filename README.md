@@ -1,121 +1,45 @@
-![Código Certo Coders](https://utfs.io/f/3b2340e8-5523-4aca-a549-0688fd07450e-j4edu.jfif)
-
 # 📚 Trilha Inicial Ciência de Dados Jr
 Este projeto tem como objetivo realizar uma análise básica de dados utilizando Python, explorando um conjunto de dados pré-definido para extrair insights simples através de estatísticas descritivas e visualizações gráficas.
 
-## Requisitos Funcionais:
-- Carregamento de Dados: Implementar a funcionalidade para carregar um conjunto de dados em formato CSV ou outro formato simples suportado pelo Python.
-- Exploração de Dados: Exibir as primeiras linhas e informações básicas do conjunto de dados, como número de linhas, colunas e tipos de dados presentes.
-- Estatísticas Descritivas: Calcular e exibir estatísticas descritivas básicas para colunas numéricas do conjunto de dados, como média, mediana, mínimo, máximo e desvio padrão.
-- Visualização de Dados: Criar pelo menos dois tipos de gráficos utilizando bibliotecas como Matplotlib ou Seaborn, como gráfico de barras para contagem de categorias e gráfico de dispersão para relação entre variáveis.
+## 💻 O Projeto
+O projeto foi desenvolvido no Jupyter Notebook, a partir das bibliotecas `Pandas` e `Matplotlib`, para análise e visualização dos dados com gráficos.
+<br>
+Para o bom funcionamento do projeto em sua máquina é necessário que instale as bibliotecas mensionadas e às importe: 
+```
+!pip install pandas
+!pip install matplotlib
+```
+## 📈 Análise
+Foi feita a análise de um conjunto de dados da Vendas de Cursos Online:
 
-   #### Análise de Dados: Vendas de Cursos Online
-   ```plaintext
-   ID,Nome do Curso,Quantidade de Vendas,Preço Unitário,Data
-   1,Introdução à Programação em Python,50,39.90,2023-01-01
-   2,Desenvolvimento Web com HTML e CSS,30,59.90,2023-01-02
-   3,JavaScript Avançado: Frameworks e Bibliotecas,20,79.90,2023-01-03
-   4,Introdução ao Machine Learning,15,99.90,2023-01-04
-   5,Desenvolvimento Mobile com React Native,25,69.90,2023-01-05
-   6,Arquitetura de Microserviços,12,89.90,2023-01-06
-   7,Banco de Dados SQL e NoSQL,18,79.90,2023-01-07
-   8,Segurança da Informação: Fundamentos,10,109.90,2023-01-08
-   9,Cloud Computing com AWS,22,99.90,2023-01-09
-   10,DevOps: Integração e Entrega Contínua,8,119.90,2023-01-10
-   11,Desenvolvimento Web com HTML e CSS,20,59.90,2023-01-11
-   12,JavaScript Avançado: Frameworks e Bibliotecas,15,79.90,2023-01-12
-   13,Introdução ao Machine Learning,10,99.90,2023-01-13
-   14,Desenvolvimento Mobile com React Native,18,69.90,2023-01-14
-   15,Arquitetura de Microserviços,8,89.90,2023-01-15
-   16,Banco de Dados SQL e NoSQL,12,79.90,2023-01-16
-   17,Segurança da Informação: Fundamentos,5,109.90,2023-01-17
-   18,Cloud Computing com AWS,15,99.90,2023-01-18
-   19,DevOps: Integração e Entrega Contínua,6,119.90,2023-01-19
-   20,Introdução à Programação em Python,45,39.90,2023-01-20
-   21,Desenvolvimento Web com HTML e CSS,25,59.90,2023-01-21
-   22,JavaScript Avançado: Frameworks e Bibliotecas,18,79.90,2023-01-22
-   23,Introdução ao Machine Learning,12,99.90,2023-01-23
-   24,Desenvolvimento Mobile com React Native,20,69.90,2023-01-24
-   25,Arquitetura de Microserviços,10,89.90,2023-01-25
-   ```
-Utilize esses dados e transforme em arquivo .CSV, você vai utilizar para realizar a análise utilizando o Python com pandas e Matplotlib/Seaborn para visualização de dados.
+1. Exibindo algumas informações: **Primeiras Linhas**, o tamanho do conjunto (**colunas e linhas**) e os **tipos de dados**.
 
-- **ID:** Identificador único de cada curso vendido.
-- **Nome do Curso:** Nome do curso vendido na plataforma.
-- **Quantidade de Vendas:** Número de vendas realizadas para cada curso.
-- **Preço Unitário:** Preço unitário do curso.
-- **Data:** Data da venda do curso.
+2. Estatística Descritiva Básica das colunas numéricas: **Média**, **Moda**, **Mediana** e **Desvio Padrão**.
+   <br>
+   
+    ![image](https://github.com/Lexarlab/TrilhaDados-CodigoCerto/assets/160747907/8e4ac74b-cb60-4ae8-97ee-05d9ae6bb1b2)
 
-## Desafios Propostos:
-   1. Calcular a receita total gerada pela venda dos cursos.
-   2. Identificar o curso com o maior número de vendas.
-   3. Visualizar a distribuição das vendas ao longo do tempo através de gráficos.
+3. Visualização de Dados a partir de gráficos de Barras e de Dispersão.
+   <br>
+   
+   3.1. Nesta primeira análise foi usado o gráfico de barras para análizar a Categoria do Courso (Nome do curso) em relação a Contagem (Quantas vezes o curso aparece na tabela de Vendas). Tendo em vista que esta Contagem **não interfere** no Número de vendas dos Cursos, podemos perceber que 5 dos 10 cursos aparecem 3 vezes e o restante 2 vezes.
+   <br>
+   
+   ![image](https://github.com/Lexarlab/TrilhaDados-CodigoCerto/assets/160747907/3a9e3f0f-2b48-4d89-9e97-8234d06e5ed0)
+   <br>
+   
+   3.2. Na segunda análise, temos um gráfico de Dispersão da **Quantidade de Vendas** em relação ao **Preço Unitário**. Através deste gráfico é possível perceber que quanto maior o preço do curso, menor é a quantidade de curso vendido, por exemplo, o curso com o valor de 120,00 reais vendeu poucas unidades em relação ao curso com o valor de 40,00 reais que vendeu entre 45 e 50.
+   <br>
+   
+   ![image](https://github.com/Lexarlab/TrilhaDados-CodigoCerto/assets/160747907/76544f20-3b81-4654-8229-adb58fcb8143)
+   <br>
 
-## Entregáveis:
-   1. **Código Fonte:**
-      - Código fonte do projeto, organizado conforme a estrutura acima.
-   2. **Repositório GitHub:**
-      - Repositório público contendo o código fonte e documentação.
-   3. **Documentação:**
-      - Documentação Simples: Breve documentação explicando o funcionamento do script e as conclusões básicas obtidas.
+   3.3. Nesta terceira análise, foi sobre a Distribuição das Vendas ao longo do tempo, onde podemos perceber que no inicío Janeiro de 2023 entre os dias 01 e 04 e quase final entre os dias 18 à 21 **aproximadamente**, teve uma alta na quantidade de cursos vendidos, já entre os dias 05 à 17 e 23 à 31 **aproximadamente**, houve uma queda na quantidade de vendas.
+   <br>
+   
+   ![image](https://github.com/Lexarlab/TrilhaDados-CodigoCerto/assets/160747907/8a4f2743-fe18-4bb9-a025-1f0ab67cdba1)
 
-### Detalhes Técnicos: 🔧
-- **Boas Práticas:** Utilizar boas práticas de código limpo, legível e bem documentado.
-- **Git:** Utilizar Git para controle de versão e submeter o projeto através de um repositório público no GitHub.
+## 📝 Conclusão
 
-### Dicas para Abordar o Projeto 🌟
-- **Crie um Fork desse Repositório.**
-- **Criar do Zero:** É fundamental que o projeto seja desenvolvido completamente do zero, demonstrando suas habilidades e criatividade desde o início.
-- **Documente cada etapa do processo para facilitar a compreensão.**
+Após as análises feitas pudemos observar que o curso mais vendido foi aquele com menor preço e que a frequência das vendas teve uma oscilação durante o mês, tendo uma queda considerável nas vendas entre o início e meio do mês.
 
-### Critérios de Avaliação: 📝
-- **Funcionalidade:** A aplicação atende aos requisitos funcionais e funciona corretamente?
-- **Qualidade do Código:** O código é limpo, bem estruturado e adequadamente documentado?
-- **Precisão dos Resultados:** As estatísticas descritivas e as visualizações de dados devem refletir com precisão as informações presentes no conjunto de dados utilizado?
-- **Uso do Git:** O controle de versão é usado de forma eficaz com mensagens de commit significativas?
-
-### Não Queremos 🚫
-- Descobrir que o candidato não foi quem realizou o teste.
-- Ver commits grandes sem muita explicação nas mensagens no repositório.
-- Entregas padrão ou cópias de outros projetos. Buscamos originalidade e autenticidade em cada contribuição.
-
-### Prazo ⏳
-Os candidatos devem completar a trilha em no máximo em 2 semanas, começando a contar a partir de 15/06.
-
-A conclusão da trilha inicial é um requisito obrigatório para avançar para a trilha 
-final. Caso a trilha inicial não seja concluída dentro do prazo estabelecido, o 
-candidato estará impossibilitado de prosseguir para trilha final.
-
-**Data máxima para entrega: 29/06**
-
-### **Configuração do Ambiente:**
-1. **Instalar Python:** Certifique-se de ter o Python instalado em sua máquina.
-2. **Instalar Jupyter Notebook:** Utilize o comando `pip install notebook` para instalar o Jupyter Notebook.
-3. **Instalar Bibliotecas:** Utilize o comando `pip install pandas matplotlib seaborn scikit-learn` para instalar as bibliotecas necessárias.
-4. **Criar Repositório no GitHub:** Crie um repositório público para o projeto.
-5. **Clonar o Repositório:** Clone o repositório para a sua máquina local e configure o ambiente de trabalho.
-
-### Instruções de Entrega: 📬
-Após finalizar o projeto, em seu repositório do GitHub, você cria um arquivo README.md que descreve o projeto, explica como executar o código Python, e detalha as análises realizadas e os insights obtidos. Você pode incluir gráficos gerados pelo Matplotlib ou Seaborn e preencha o [Formulário](https://forms.gle/gZViPMTSDV5nidSu6):
-
----
-
-### Desafio da Inovação 🚀
-Achou esse projeto inicial simples? Eleve ainda mais! Estamos em busca de mentes inovadoras que não apenas criem, mas que também desafiem os padrões. Como você pode transformar essa estrutura inicial em algo verdadeiramente extraordinário? Demonstre o poder da sua criatividade e o impacto das suas ideias inovadoras!
-
----
-
-🔗 **Mantenha-se Conectado:**
-- [Discord](https://discord.gg/wzA9FGZHNv)
-- [Website](http://www.codigocertocoders.com.br/)
-- [LinkedIn](https://www.linkedin.com/company/codigocerto/)
-  
-🌐 **Contato:**
-- Email: codigocertocoders@gmail.com
-
----
-
-### Precisa de Ajuda?
-Está com alguma dificuldade, encontrou algum problema no desafio ou tem alguma sugestão pra gente? Crie uma issue e descreva o que achar necessário.
-
-**Construindo o amanhã, hoje.**
